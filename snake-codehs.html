@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>snake game</title>
+  <style>
+    body {
+      background-color: black;
+      text-align: center;
+      font-family: arial;
+      color: lime;
+    }
+    h1 { font-size: 30px; color: lime; }
+    #gameCanvas { border: 3px solid lime; margin-top: 10px; }
+    #score { font-size: 20px; margin-top: 5px; }
+    #message { font-size: 16px; color: yellow; margin-top: 5px; }
+    button {
+      margin-top: 10px;
+      padding: 8px 20px;
+      background-color: lime;
+      color: black;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    #scoreboard { margin-top: 15px; color: lime; font-size: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>snake game :)</h1>
+  <p style="color: gray; font-size: 13px;">use wasd or arrow keys to move</p>
+
+  <div id="score">score: 0 &nbsp;|&nbsp; best: 0 &nbsp;|&nbsp; lives: 3</div>
+  <br>
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
+  <br>
+  <div id="message">press any key or click start to play</div>
+  <br>
+  <button onclick="startGame()">start game</button>
+
+  <div id="scoreboard">
+    <p>-- high scores --</p>
+    <ol id="sbList" style="display: inline-block; text-align: left;">
+      <li style="color: gray">no scores yet</li>
+    </ol>
+  </div>
+
+  <p style="color: gray; font-size: 11px; margin-top: 20px;">made this in 3rd period lol</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
